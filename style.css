@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 20px;
+  color: #222222;
+}
+
+.halaman {
+  width: 85%;
+  max-width: 850px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 25px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.foto {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.foto img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #333;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: #243b55;
+}
+
+header p {
+  font-size: 14px;
+  color: #555555;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #243b55;
+  margin-bottom: 25px;
+}
+
+.isi {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.foto {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #cccccc;
+  padding: 4px;
+}
+
+.data-diri {
+  flex: 1;
+}
+
+h2 {
+  font-size: 20px;
+  color: #243b55;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px 5px;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+td:first-child {
+  width: 42%;
+}
+
+.tentang {
+  margin-top: 30px;
+}
+
+.tentang p {
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+footer {
+  margin-top: 35px;
+  padding-top: 12px;
+  border-top: 1px solid #cccccc;
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+}
+
+/* Tampilan layar HP */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .halaman {
+    width: auto;
+    margin: 10px auto;
+    padding: 18px;
+  }
+
+  .isi {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .foto {
+    width: 150px;
+  }
+
+  .data-diri {
+    width: 100%;
+  }
+
+  td {
+    font-size: 13px;
+  }
+
+  td:first-child {
+    width: 40%;
+  }
+}
